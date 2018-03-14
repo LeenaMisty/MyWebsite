@@ -1,0 +1,176 @@
+/*nav bar styles*/
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #86af49;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color:#b5e7a0;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.active {
+    background-color:  #405d27;
+    color: white;
+}
+
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.footer {
+    background:  #e3eaa7;
+    font-size: 13px;
+}
+
+a .scrollup:hover {
+    opacity: 1;
+}
+
+a .scrollup {
+    width: 34px;
+    height: 35px;
+    position: fixed;
+    bottom: 15px;
+    right 15px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fe5c3c;
+    border-radius: 50%;
+    padding: 5px 4px;
+    opacity: 4;
+}
+
+
+
+/*--------------SightSeeing------------------------------*/
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container1 {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/* styles for displaying a text-block over an image */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container2 {
+    position: relative;
+    font-family: Arial;
+}
+
+/*--------MAin image text-------------*/
+* {
+    box-sizing: border-box;
+}
+
+body .content {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.container-fluid {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.container-fluid img {vertical-align: middle;}
+
+.container-fluid .content1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 30px;
+}
+

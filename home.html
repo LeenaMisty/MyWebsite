@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sceinic Manipur </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/stylesheet1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<section class="header">
+    <div class="nav" id="mynav">
+        <a href="#home" class="active">Home</a>
+        <a href="#sights">SightSeeing</a>
+        <a href="#map">Map</a>
+        <a href="#favourites">Favourites</a>
+        <a href="#about">About Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <img src="images/pic1.jpeg" style="width:100%;height:600px;" alt>
+        <div class="content1">
+            <h1>Manipur</h1>
+            <p class="nature">Nature, in the broadest sense, is the natural,
+            physical, or material world or universe. "Nature" can refer to
+            the phenomena of the physical world, and also to life in general.
+            The study of nature is a large, if not the only, part of science.
+            Although humans are part of nature, human activity is often understood
+            as a separate category from other natural phenomena.
+
+            The word nature is derived from the Latin word natura, or "essential
+            qualities, innate disposition", and in ancient times, literally meant
+            "birth". Natura is a Latin translation of the Greek word physis
+            , which originally related to the intrinsic characteristics that
+            plants, animals, and other features of the world develop of their own
+            accord. The concept of nature as a whole, the physical universe, is one
+            of several expansions of the original notion; it began with certain core
+            applications of the word φύσις by pre-Socratic philosophers, and has steadily
+            gained currency ever since. This usage continued during the advent of modern
+            scientific method in the last several centuries.</p>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="sights">
+        <h1 class="font-weight-bold text-center">Places For SightSeeing</h1>
+        <h5 class="font-weight-bold text-center">Click the Images To View About the places in Detail</h5>
+        <div class="container2">
+            <div class="row">
+                <div class="column">
+                    <img src="images/pic3.jpg" alt="Loktak Lake is the largest freshwater lake
+                        in Northeast India and is famous for the phumdis
+                        (heterogeneous mass of vegetation, soil and organic
+                        matter at various stages of decomposition) floating
+                        over it. The lake is located near Moirang in Manipur
+                        state, India.The etymology of Loktak is Lok meaning 'stream'
+                        and tak meaning 'the end'.The largest of all the phumdis
+                        covers an area of 40 km2 (15 sq mi) and is situated on
+                        the southeastern shore of the lake." style="height:200px;width:270px;" onclick="openImg(this);">
+
+                </div>
+
+                <div class="column">
+                    <img src="images/pic4.jpg" alt="Keibul Lamjao" style="height:200px;width:270px;" onclick="openImg(this);">
+                </div>
+
+                <div class="column">
+                    <img src="images/pic5.jpg" alt="Kakching" style="height:200px;width:270px;" onclick="openImg(this);">
+                </div>
+
+                <div class="column">
+                    <img src="images/pic6.jpg" alt="Andro" style="height:200px;width:270px;" onclick="openImg(this);">
+                </div>
+            </div>
+
+            <!-- The expanding image container -->
+            <div class="container1">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="font-weight-bold text-center">Navigate Around With Ease</h1>
+        <div id="map" style="width:100%;height:300px;"></div>
+    </div><br /><br /><br />
+
+</section>
+
+<section class="slider">
+    <div class="container">
+            <div class="jumbotron">
+                <h1 class="font-weight-bold text-center">Must Visit Places</h1>
+                <div class="slideshow-container">
+
+                    <div class="myslides fades">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/fav1.jpg" style="width:100%; height:500px" alt="paris tour pic">
+                        <div class="text">Caption</div>
+                    </div>
+
+                    <div class="myslides fades">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/fav2.jpg" style="width:100%; height:500px" alt="paris tour pic">
+                        <div class="text">Caption</div>
+                    </div>
+
+                    <div class="myslides fades">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/fav3.png" style="width:100%; height:500px" alt="paris tour pic">
+                        <div class="text">Caption</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <p class="text-center">&copy;All rights to Leena. 13th March 2018.</p>
+    </div>
+</section>
+<div>
+    <a href="#" class="scrollup" style="display: inline;">
+        <i class="glyphicon glyphicon-chevron-up">
+            ::before
+        </i>
+    </a>
+</div>
+<!--Navigation script-->
+<script>
+    function myFunction() {
+    var x = document.getElementById("mynav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+
+<!----------Image tab script------------>
+<script>
+    function openImg(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+ // imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+<!--------------Map Script------------------>
+<script>
+    function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(24.66, 93.90),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByxOW79r1e63EPP6463ui-P1w31eIpalE&callback=myMap"></script>
+
+
+
+
+<!------------------Slider script-------------------->
+<script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("myslides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                     dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+</script>
+</body>
+</html>
