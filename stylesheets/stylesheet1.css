@@ -27,7 +27,7 @@
     color: white;
 }
 
-
+/*--style for Misc icon for responsive--*/
 .nav .icon {
   display: none;
 }
@@ -151,7 +151,7 @@ a .scrollup {
     box-sizing: border-box;
 }
 
-body .content {
+body {
     margin: 0;
     font-family: Arial;
     font-size: 17px;
@@ -172,5 +172,14 @@ body .content {
     color: #f1f1f1;
     width: 100%;
     padding: 30px;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    text-align:center;
 }
 
